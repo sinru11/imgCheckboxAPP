@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/chkMina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -27,7 +27,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgMina" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/chkMomo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgMomo" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/chkSana"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgTzuyu" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/chkTzuyu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -62,10 +62,11 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:onClick="btnOK"
         android:text="送出"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+        app:layout_constraintTop_toBottomOf="@+id/chkSana" />
 
     <TextView
         android:id="@+id/textView2"
@@ -86,12 +87,13 @@
         app:srcCompat="@drawable/mina" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/mina"
         android:layout_width="75dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/mina" />
@@ -108,13 +110,14 @@
         app:srcCompat="@drawable/momo" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/momo"
         android:layout_width="75dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/mina"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/momo" />
 
@@ -123,18 +126,19 @@
         android:layout_width="75dp"
         android:layout_height="80dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="@+id/chkMina"
+        app:layout_constraintTop_toBottomOf="@+id/chkMina"
         app:srcCompat="@drawable/sana" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/sana"
         android:layout_width="75dp"
         android:layout_height="80dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/momo"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/sana" />
 
@@ -146,17 +150,18 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toEndOf="@+id/imgTzuyu"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/chkMomo"
         app:srcCompat="@drawable/tzuyu" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/tzuyu"
         android:layout_width="56dp"
         android:layout_height="79dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/sana"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:srcCompat="@drawable/tzuyu" />
 
